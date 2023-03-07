@@ -1,0 +1,19 @@
+﻿<Window x:Class="prac14.CreateNewTypeElementpage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:prac14"
+        mc:Ignorable="d"
+        Title="CreateNewTypeElementpage" Height="200" Width="450">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Margin="15" VerticalAlignment="Center" Text="Enter the name of the new element type:" TextAlignment="Center"/>
+        <TextBox x:Name="NewType" Grid.Row="1" VerticalAlignment="Center" Margin="20,0,20,0"/>
+        <Button x:Name="FinalButton" Content="Add new type" Grid.Row="2" VerticalAlignment="Center" Margin="20" Click="FinalButton_Click"/>
+    </Grid>
+</Window>
