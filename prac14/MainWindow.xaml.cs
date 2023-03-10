@@ -24,12 +24,21 @@ namespace prac14
         public MainWindow()
         {
             InitializeComponent();
+            Alltypes = y.Deserialize<List<string>>("allTypes.json");
+            TypesDisplay.ItemsSource = Alltypes;
         }
 
         private void CreateType_Click(object sender, RoutedEventArgs e)
         {
             CreateNewTypeElementpage NewPage = new();
-            Alltypes.Add(NewPage.NameOfNewType);
+            NewPage.ShowDialog();
+            if (NewPage.DialogResult == true)
+            {
+                Alltypes.Add(NewPage.NameOfNewType);
+                y.Serialize<List<string>>(Alltypes, "allTypes.json");
+                Alltypes = y.Deserialize<List<string>>("allTypes.json");
+                TypesDisplay.ItemsSource = Alltypes;
+            }
         }
     }
 }

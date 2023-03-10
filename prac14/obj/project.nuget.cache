@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "eDyfc0gL20XiuWRQwaifyWw4wTPxrZdoI0n7lkYt+0lnrFng6qEoDMCMoV+9YF4dqb23SFL+WDOGVU7Egnqqdg==",
+  "dgSpecHash": "3p9QOIREC4oo1fqW78/SnzSVu3AhxUd9zzVr8BQaMqJ3goxwJI7qNBZtHMWDAdO8Rcz43q/ZfMccXo5+/CrzPw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\klink\\source\\C++ repos\\prac14\\prac14\\prac14.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\klink\\source\\repos\\prac14\\prac14\\prac14.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\klink\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

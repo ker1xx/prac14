@@ -14,6 +14,12 @@
             <Setter Property="VerticalAlignment" Value="Bottom"/>
             <Setter Property="VerticalContentAlignment" Value="Center"/>
         </Style>
+        <Style TargetType="TextBlock" x:Key="RightSideText">
+            <Setter Property="Margin" Value="10,5,10,0"/>
+            <Setter Property="Grid.Column" Value="1"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+        </Style>
         <Style TargetType="Button" BasedOn="{StaticResource ButtonDefault}"/>
     </Window.Resources>
     <Grid>
@@ -37,13 +43,13 @@
         <Button x:Name="Add" Content="Add New Element" Grid.Row="4"/>
         <Button x:Name="Change" Content="Edit Current Element" Grid.Row="5"/>
         <Button x:Name="Delete" Content="Delete Current Element" Grid.Row="6"/>
-        <Button x:Name="CreateType" Content="Create new type of Element" Grid.Row="2" Click="CreateType_Click"/>
         <TextBox x:Name="AmountWriter" Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" Margin="10,0,10,0"/>
         <TextBox x:Name="NameWriter" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" Margin="10,0,10,0"/>
-        <ComboBox  Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" Margin="10"/>
-        <TextBlock  Grid.Column="1"  Grid.Row="1" VerticalAlignment="Top" Margin="10,5,10,0"/>
-        <TextBlock  Grid.Column="1"  Grid.Row="2" VerticalAlignment="Top" Margin="10,5,10,0"/>
-        <TextBlock  Grid.Column="1"  Grid.Row="3" VerticalAlignment="Top" Margin="10,5,10,0"/>
+        <ComboBox x:Name="TypesDisplay" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" Margin="10"/>
+        <Button x:Name="CreateType" Content="Create new type of Element" Grid.Row="2" Click="CreateType_Click"/>
+        <TextBlock Text="Name of new element:" Grid.Row="1" Style="{StaticResource RightSideText}"/>
+        <TextBlock Text="Type of new element" Grid.Row="2" Style="{StaticResource RightSideText}"/>
+        <TextBlock Text="Description of new element:" Grid.Row="3" Style="{StaticResource RightSideText}"/>
         <TextBlock  Grid.Column="0"  Grid.Row="7" Grid.ColumnSpan="2" />
     </Grid>
 </Window>

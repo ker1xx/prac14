@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:prac14"
         mc:Ignorable="d"
-        Title="CreateNewTypeElementpage" Height="200" Width="450">
+        Title="CreateNewTypeElementpage" Height="300" Width="675">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>

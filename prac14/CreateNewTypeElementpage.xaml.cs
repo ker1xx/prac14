@@ -28,6 +28,7 @@ namespace prac14
         private void FinalButton_Click(object sender, RoutedEventArgs e)
         {
             NameOfNewType = NewType.Text;
+            DialogResult = true;
         }
     }
 }
